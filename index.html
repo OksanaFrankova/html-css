@@ -11,50 +11,85 @@
             border: 5px solid black;
             }
 
+            .header {
+            width: 650px;
+            height: 50px;
+            background: rgb(217,204,255);
+            margin: 0%;
+            }
+
+            .block2 {
+            width: 650px;
+            height: 500px;
+            margin-top: -22px;
+            }
+
             .sidebar1 {
-            width: 300px;
+            width: 40%;
             height: 500px;
             background: grey;
             float: left;
             }
 
             .sidebar2 {
-            width: 350px;
+            color: blue;
+            width: 60%;
             height: 500px;
-            margin-left: 300px;
-            margin-top: -20px;
-            background: RGB (255, 255, 204);
-            }
-
-            .header {
-            width: 650px;
-            height: 50px;
-            background: lightgrey;
-            margin: 0%;
+            padding-left: 270px;
+            background: rgb(213, 246, 230);
             }
 
             .img {
-            margin-left: 100px;
+            margin-left: 80px;
             margin-top: 20px;
             width: 100px;
             height: 100px;
             }
 
-            .text {
-            text-align: center;
-            color: blue;
-            padding: 15px;
+            img {
+            border-radius:30px;
+            border: solid 1px white;
+            }
+
+            .welkome {
+            color: black;
+            }
+
+            h1 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            text-shadow: 2px 2px;
+            }
+
+            @-webkit-keyframes pulsate {
+            50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+            }
+            @keyframes pulsate {
+            50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+            }
+            #blink1 {
+            color: black;
+            text-shadow: 0 -1px rgba(0,0,0,.1);
+            background: rgb(217,204,255);
+            -webkit-animation: pulsate 1.2s linear infinite;
+            animation: pulsate 1.2s linear infinite;
             }
 
             .block1 {
+            text-align: center;
             color: white;
+            }
 
+            h2 {
+            padding-left: 80px;
+            padding-right: 80px;
             }
 
             .border {
             width: 200px;
             height: 0px;
-            margin-left: 50px;
+            margin-left: 30px;
+            border: solid 1px white;
             }
 
             .family {
@@ -70,13 +105,32 @@
             .life {
             width: 240px;
             margin-left: 10px;
-            float: centr;
+            float: center;
             }
 
             .border2 {
             width: 300px;
             height: 0px;
             margin-left: 5px;
+            border: solid 1px blue;
+            }
+
+            h3 {
+            text-decoration: underline;
+            color: white;
+            }
+
+            .list ul {
+            margin-left: 10px;
+            list-style-type:none;
+            }
+
+            .list li:before {
+            content: "—";
+            }
+
+            #contacts>a {
+            style="list-style-type:circle;
             }
 
 
@@ -86,82 +140,88 @@
 
     <body>
        <div class="block">
-            <div class="header">
-                <div class="text">
-                    <center><h3  style="margin-top: 0px; margin-bottom: 0px;">Welcome</h3></center>
+           <div class="header">
+                <div class="welkome">
+                    <center><h1 id="blink1">Welcome</h1></center>
                 </div>
 
             </div>
 
-            <div class="sidebar1">
-                <div class="img" style="float: centr">
-                    <img src="img/volf.jpg" height="100px" width="100px" style="border-radius:30px; border: solid 1px white"/>
+           <div class="block2">
+               <div class="sidebar1">
+                <div class="img">
+                    <img src="img/volf.jpg" height="100px" width="100px"/>
                 </div>
 
                 <div class="block1">
-                    <center><h2 style="padding-left: 100px; padding-right: 100px;">Frankova Oksana</h2></center>
+                    <h2>Frankova Oksana</h2>
                 </div>
 
-                <div class="border" style="border: solid 1px white"></div>
+                <div class="border"></div>
 
                 <div class="list1">
-                    <center><h3 style="text-decoration: underline; color: white;">Like</h3></center>
-                    <dl>
-                        <dt class="family" style="background: pink; border-radius: 5px; text-align: center;">Family</dt>
-                        <dt class="friends" style="background: yellow; border-radius: 5px; text-align: center;">Friends</dt>
-                        <dt class="life" style="background: violet; border-radius: 5px; text-align: center;">Life</dt>
-                    </dl>
+                    <center><h3>Like</h3></center>
+                        <dl>
+                            <dt class="family" style="background: pink; border-radius: 5px; text-align: center;">Family</dt>
+                            <dt class="friends" style="background: yellow; border-radius: 5px; text-align: center;">Friends</dt>
+                            <dt class="life" style="background: violet; border-radius: 5px; text-align: center;">Life</dt>
+                        </dl>
                 </div>
 
                 <div class="list2">
-                    <center><h3 style="text-decoration: underline; color: white;">Contacts</h3></center>
-                    <ul>
-                        <li><a href="https://www.facebook.com/oksana.frankova.3">Facebook</a></li>
-                        <li>+38(099)025-51-17</li>
-                    </ul>
+                    <center><h3>Contacts</h3></center>
+                        <ul>
+                            <li><a href="https://www.facebook.com/oksana.frankova.3">Facebook</a></li>
+                            <li>+38(099)025-51-17</li>
+                        </ul>
                 </div>
 
             </div>
 
-            <div class="sidebar2" style="color: blue;";>
+               <div class="sidebar2">
                 <div class="date">
-                    <h5>Date of Birth:</h5>
-                    <dl>
-                        <dt>25.08.1984</dt>
-                    </dl>
+                    <h5>Date of Birth:
+                        <dl>
+                            <dt>25.08.1984</dt>
+                        </dl>
+                    </h5>
                 </div>
 
-                <div class="place">
-                    <h5>Place of Birth:</h5>
-                    <dl>
-                        <dt>Ukraine</dt>
-                    </dl>
+                <div class="place date">
+                    <h5>Place of Birth:
+                        <dl>
+                            <dt>Ukraine</dt>
+                        </dl>
+                    </h5>
                 </div>
 
-                <div class="border2" style="border: solid 1px blue"></div>
+                <div class="border2"></div>
 
                 <div class="skills">
-                    <h5>Soft Skill</h5>
-                    <ul style="list-style-type:none;">
-                        <li>- Word</li>
-                        <li>- Paint</li>
-                    </ul>
+                    <h5 class="list">Soft Skill
+                        <ul>
+                            <li> Word</li>
+                            <li> Paint</li>
+                        </ul>
+                    </h5>
                 </div>
 
-                <div class="border2" style="border: solid 1px blue"></div>
+                <div class="border2"></div>
 
                 <div class="about me">
-                    <h5>About me</h5>
-                    <ul style="list-style-type:none;">
-                        <li>- I'm communicable</li>
-                        <li>- I don't smoke</li>
-                        <li>- I don't drink alcohol</li>
-                    </ul>
+                    <h5 class="list">About me
+                        <ul>
+                            <li> I'm communicable</li>
+                            <li> I don't smoke</li>
+                            <li> I don't drink alcohol</li>
+                        </ul>
+                    </h5>
                 </div>
 
-                <div class="border2" style="border: solid 1px blue"></div>
+                <div class="border2"></div>
 
             </div>
+           </div>
         </div>
     </body>
 
