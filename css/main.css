@@ -1,0 +1,128 @@
+.block {
+    width: 650px;
+    height:550px;
+    background: white;
+    border: 5px solid black;
+}
+
+.header {
+    width: 650px;
+    height: 50px;
+    background: rgb(217,204,255);
+    margin: 0%;
+}
+
+.block2 {
+    width: 650px;
+    height: 500px;
+    margin-top: -22px;
+}
+
+.sidebar1 {
+    width: 255px;
+    height: 500px;
+    background: grey;
+    float: left;
+}
+
+.sidebar2 {
+    color: blue;
+    width: 380px;
+    height: 500px;
+    padding-left: 270px;
+    background: rgb(213, 246, 230);
+}
+
+.img {
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    border-radius:30px;
+    border: solid 1px white;
+}
+
+.welkome {
+    color: black;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px;
+}
+
+@-webkit-keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+#blink1 {
+    color: black;
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    background: rgb(217,204,255);
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+}
+
+.block1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    padding-left: 70px;
+    padding-right: 80px;
+}
+
+.border {
+    width: 200px;
+    height: 0px;
+    margin-left: 30px;
+    border: solid 1px white;
+}
+
+.family {
+    width: 200px;
+    margin-left: 10px;
+}
+
+.friends {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.life {
+    width: 240px;
+    margin-left: 10px;
+    float: center;
+}
+
+.border2 {
+    width: 300px;
+    height: 0px;
+    margin-left: 5px;
+    border: solid 1px blue;
+}
+
+h3 {
+    text-decoration: underline;
+    color: white;
+}
+
+.list ul {
+    margin-left: 10px;
+    list-style-type:none;
+}
+
+.list li:before {
+    content: "—";
+}
+
+#contacts>a {
+    style="list-style-type:circle;
+}
